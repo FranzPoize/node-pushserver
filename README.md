@@ -58,6 +58,11 @@ If you checked out this project from github, you can find a configuration file e
             "batchFeedback": true
         }
     }
+
+    "mpns": {
+        "cert":"/path/to/cert.pem",
+        "key":"/path/to/certkey.pem"
+    }
 }
 
 ```
@@ -106,11 +111,17 @@ http://domain:port/send (POST)
     "alert": "Your message here",
     "sound": "soundName"
   }
+  "wp": {
+    "type":"toast",
+    "text1":"Bold text",
+    "text2":"not bold text"
+  }
 }
 ```
 
 + "users" is optionnal, but must be an array if set. If not defined, the push message will be sent to every user (filtered by target).
 + You can send push messages to Android or iOS devices, or both, by using the "android" and "ios" fields with appropriate options. See GCM and APN documentation to find the available options. 
++ For WP same parameters as an MPNS notification
 
 #### Send push notifications
 ```
