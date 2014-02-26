@@ -110,7 +110,7 @@ http://domain:port/send (POST)
     "badge": 0,
     "alert": "Your message here",
     "sound": "soundName"
-  }
+  },
   "wp": {
     "type":"toast",
     "text1":"Bold text",
