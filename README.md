@@ -57,7 +57,7 @@ If you checked out this project from github, you can find a configuration file e
             "interval": 43200,
             "batchFeedback": true
         }
-    }
+    },
 
     "mpns": {
         "cert":"/path/to/cert.pem",
@@ -173,7 +173,7 @@ http://domain:port/subscribe (POST)
 }
 ```
 + All field are required
-+ "type" can be either "android" or "ios"
++ "type" can be either "android" or "ios" or "wp"
 + A user can be linked to several devices and a device can be linked to serveral users.
 
 #### Unsubscribe
